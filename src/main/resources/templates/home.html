@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample WebApp</title>
+</head>
+<body>
+<h1> Welcome to sample web application!!</h1>
+
+
+
+<p th:if="${#bools.isFalse(#strings.isEmpty('username'))}">Ola ${username}</p>
+<p th:if="${#bools.isFalse(#strings.isEmpty('username'))}">
+    <h2 th:text="'Ola ' + ${username}"></h2>
+</p>
+
+</body>
+</html>
